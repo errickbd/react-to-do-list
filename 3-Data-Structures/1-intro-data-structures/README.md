@@ -7,3 +7,5 @@
 - Binary Search
 - Why Binary > Linear
 - Big-O Analysis O-log(n)
+
+![LinearvsBinary](./resources/linearvsbinary.png)
