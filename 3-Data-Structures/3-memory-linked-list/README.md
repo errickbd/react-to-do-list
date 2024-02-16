@@ -1,6 +1,6 @@
 # Computer Memory & Linked List
 
-## Memory
+## Computer Memory
 
 - What is Computer Memory
 - Why should I know Computer Memory
