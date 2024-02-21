@@ -1,11 +1,13 @@
 # HTML & CSS
 
+- Quick Overview of Full Stack Cycle
+
 ## HTML
 
 - What is HTML
 - Amazon Visual Example
 - Document Structure
-  - Doctype (xml, xhtml, html, markdown, LaTeX, JSON, YAML, CSS)
+  - Doctype
   - html
   - head
   - body
@@ -56,6 +58,7 @@
 - Inline Style
 - link tag
 - Selectors
+- Inline Style > ID > CLASS > TAGS
 - CSS Box Model (styles in the bottom right hand side of)
   - content
   - padding
