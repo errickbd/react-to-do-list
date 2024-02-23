@@ -1,14 +1,14 @@
--- DROP TABLE IF EXISTS students;
+DROP TABLE IF EXISTS students;
 
--- CREATE TABLE students (
---     id serial PRIMARY KEY,
---     first_name CHAR(10),
---     last_name  CHAR(10),
---     age INT,
---     grade CHAR(1)
--- );
+CREATE TABLE students (
+    id serial PRIMARY KEY,
+    first_name VARCHAR(10),
+    last_name  VARCHAR(10),
+    age INT,
+    grade CHAR(1)
+);
 
--- COPY students FROM '/Users/franciscoavila/Desktop/whiskey-demos-and-notes/4-Full-Stack/2-intro-to-sql/resources/data.csv' DELIMITER ',' CSV HEADER;
+COPY students FROM '/Users/franciscoavila/Desktop/whiskey-demos-and-notes/4-Full-Stack/2-intro-to-sql/resources/data.csv' DELIMITER ',' CSV HEADER;
 
 -- INSERT INTO students (id, first_name, last_name, age, grade) VALUES (6,'francisco', 'avila', '18', 'B');
 -- INSERT INTO students (first_name, last_name, age, grade) VALUES ('francisco2', 'avila', '18', 'B');
