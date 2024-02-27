@@ -15,3 +15,5 @@
 - Manipulating the DOM
 - Fetch and the PokeAPI
 - Creating Img through the JS DOM
+
+![drawings](./resources/drawing.png)
