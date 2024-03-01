@@ -12,6 +12,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [showHello, setShowHello] = useState(true);
   const [tasks, setTasks] = useState(tasksData);
+  // const [newTaskInput, ]
   
   // console.log('tasks data', tasksData);
   console.log('hello world');
@@ -24,12 +25,20 @@ function App() {
     return `ID: ${task.id}, ${task.task}, COMPLETED: ${task.completed ? "Yes" : "No"}`;
   }
 
+  
   const exampleNewTask = { id: 8, task: "Buy groceries", completed: false };
 
   const addTaskHandler =() => {
     console.log('add task');
-    setTasks([ ...tasks, exampleNewTask])
+    const newTask = {id: tasks.length +1, task: newTaskInput, completed:false}
+    setTasks([ ...tasks, newTask])
   };
+
+  const handleNewTaskInput = (event) => {
+    console.log(('handleNewTaskInput'), event.target.value);
+    setNewTaskInput(event.target.value)
+  }
+
 
   return (
     <>
@@ -43,9 +52,15 @@ function App() {
       <ul>
         {tasks.map((task, i) => <li key={i}>{renderTask(task)}</li>)}
       </ul>
+      <h2>Create New Task</h2>
+      <input placeholder={"Enter Task Description"} onChange={handleNewTaskInput} value={newTaskInput}></input>
       <button onClick={addTaskHandler}>Add Example New Task</button>
+      
     </>
   )
 }
+
+
+
 
 export default App
